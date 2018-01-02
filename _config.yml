@@ -4,7 +4,7 @@ email: ywsh9527@163.com
 description: > # this means to ignore newlines until "baseurl:"
   尹生的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://yws9527.github.io # the base hostname & protocol for your site
+url: https://yws9527.github.io # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
 author: Sheng Yin
 
@@ -31,7 +31,7 @@ disqus:
 # google analytics config
 ga:
   id: UA-54767140-1
-  url: yansu.org
+  url: https://yws9527.github.io
 
 # Build settings
 permalink: /:year/:month/:day/:title.html
