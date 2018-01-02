@@ -14,11 +14,8 @@ filter: 'category'
 recent_num: 20
 
 # Social account
-twitter: ''
-weibo: ''
 github: yws9527
-instagram: ''
-linkedin: ''
+
 
 # avatar and Favicon
 avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
@@ -31,7 +28,7 @@ disqus:
 # google analytics config
 ga:
   id: UA-54767140-1
-  url: https://yws9527.github.io
+  url: yws9527.github.io
 
 # Build settings
 permalink: /:year/:month/:day/:title.html
