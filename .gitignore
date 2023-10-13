@@ -1,10 +1,22 @@
-_site/
-_drafts/
-.DS_Store
-.idea/
-.sass-cache
-Gemfile
+# Bundler cache
+.bundle
+vendor
 Gemfile.lock
-_posts/.MWebMetaData/
-.jekyll-metadata
-start
+
+# Jekyll cache
+.jekyll-cache
+_site
+
+# RubyGems
+*.gem
+
+# NPM dependencies
+node_modules
+package-lock.json
+
+# IDE configurations
+.idea
+.vscode
+
+# Misc
+assets/js/dist
