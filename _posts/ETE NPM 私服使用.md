@@ -1,0 +1,29 @@
+#### 1. 注册
+
+npm adduser
+
+> username: ywsh
+> 
+> password: 123456
+> 
+> email: ywsh9527@163.com
+
+#### 2. 登录
+
+> npm login
+> 
+> username、password、email
+
+#### 3. 发布
+
+> npm publish
+> 
+> 版本号 >= 1.1.1
+
+#### 4. 删除
+
+> npm unpublish --force 包名
+> 
+> or
+> 
+> npm unpublish --force 包名@版本

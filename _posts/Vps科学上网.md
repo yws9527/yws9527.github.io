@@ -1,0 +1,19 @@
+# Vps 科学上网指北
+
+##### 1. [multi-v2ray 多用户管理脚本](https://github.com/Jrohy/multi-v2ray)
+
+##### 2. v2ray restart fail报错解决
+
+> 近期v2ray自动化部署的脚本更新到最新v5.1.0后，程序运行状态会出现v2ray restart fail
+>
+> 解决方法如下 指定版本退回
+>
+> ```shell
+> v2ray update v4.45.2
+> ```
+>
+> 
+
+##### 3. 参考
+
+[一灯不是和尚](https://iyideng.net/black-technology/cgfw/vless-one-click-script-building-and-using-tutorial.html)

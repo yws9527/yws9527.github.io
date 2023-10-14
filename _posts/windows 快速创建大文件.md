@@ -1,0 +1,8 @@
+# windows 快速创建超大文件
+
+``` cmd
+fsutil file createnew c:\1GB.txt 10737418200
+
+# 需要指定文件[【具体路径】 和 【大小(单位bte)】
+```
+

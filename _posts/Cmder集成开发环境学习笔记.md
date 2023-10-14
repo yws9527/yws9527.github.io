@@ -1,0 +1,72 @@
+#### 1. Cmder集成 vscode
+
+1. 官网：https://cmder.net/
+
+2. 配置环境变量
+   
+   > 添加 <u>CMDER_ROOT</u>  Cmder.exe 所在的目录
+   > 
+   > 添加 <u>Path</u>  Cmder.exe 所在的目录
+
+3. 添加到右键菜单
+   
+   ```sh
+   // 已管理员身份运行cmd，执行以下命令
+   Cmder.exe /REGISTER ALL
+   ```
+
+4. 设置cmder
+   
+   > 在cmder中配置环境变量和语言
+   > 
+   > set PATH=%ConEmuBaseDir%\Script;%PATH%
+   > 
+   > set LANG=zh_CN.UTF-8
+
+5. 集成vscode
+   
+   ```json
+   "terminal.integrated.profiles.windows": {
+                 // 配置方式1：
+           "Ysh": {
+               "path": "C:\\Dev\\cmder\\vendor\\git-for-windows\\bin\\bash.exe"
+           },
+                 // 配置方式2：
+                 "Ysh": {
+                "path": "C:\\WINDOWS\\System32\\cmd.exe",
+                "args": ["/K", "[cmder_root]\\vendor\\bin\\vscode_init.cmd"]
+            }
+           "PowerShell": {
+               "source": "PowerShell",
+               "icon": "terminal-powershell"
+           },
+           "Command Prompt": {
+               "path": [
+                   "${env:windir}\\Sysnative\\cmd.exe",
+                   "${env:windir}\\System32\\cmd.exe"
+               ],
+               "args": [],
+               "icon": "terminal-cmd"
+           },
+           "Git Bash": {
+               "source": "Git Bash"
+           }
+       },
+       "terminal.integrated.defaultProfile.windows": "Ysh",
+   ```
+
+#### 2. Cmder集成 windows termnal
+
+1. 新增命令行 Cmder
+
+2. 命令行设置
+   
+   > cmd /k C:\Dev\cmder\vendor\init.bat -new_console
+
+3. 启动目录
+   
+   > %USERPROFILE%
+
+4. 图标
+   
+   > C:\Dev\cmder\icons\cmder_blue.ico
