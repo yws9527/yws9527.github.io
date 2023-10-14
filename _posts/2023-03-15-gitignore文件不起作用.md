@@ -1,8 +1,7 @@
 ---
 title: gitignore文件不起作用
-date: 2023-03-15 14:10:00 +0800
 categories: [Git]
-tags: [git]     # TAG names should always be lowercase
+tags: [git]
 ---
 
 # .gitignore文件不起作用
