@@ -1,6 +1,6 @@
 ---
 title: Linux安装ohmyzsh
-categories: [Terminal]
+categories: [Linux]
 tags: [terminal]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Linux安装docker
-categories: [Docker]
+categories: [Linux]
 tags: [docker]
 ---
 
