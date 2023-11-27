@@ -78,11 +78,8 @@ tags: [sublime]
 
 3、弹框中输入 install package，选中 Package Control: Install Package 然后等待弹窗(可能需要耐心等待一段时间)
 
-4、等出现如下弹窗后, 在弹窗的搜索框中输入 ChineseLocalizations , 点击出现的选项
+4、等安装完成后, 在弹窗的搜索框中输入 ChineseLocalizations，并安装
 
-5、等待一段时间，如果出现了如下画面则汉化步骤全部完成
-
-6、后续若需要更改，可点击菜单栏 帮助-–>Language 选择进行更改。
 
 
 
