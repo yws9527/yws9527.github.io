@@ -149,7 +149,7 @@ defaults:
       comments: false
   - scope:
       path: html/about.html
-      type: tabs
+      # type: tabs
     values:
       # layout: page
       permalink: /:about/
