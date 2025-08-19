@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尹武生 | 高级前端开发工程师</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap'); */
+        body {
+            /* font-family: 'Noto Sans SC', sans-serif; */
+            font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+        .section-title {
+            position: relative;
+            padding-left: 1rem;
+        }
+        .section-title:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.2em;
+            height: 1em;
+            width: 0.3em;
+            background-color: #3b82f6;
+            border-radius: 0.15em;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #e2e8f0;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 0.25rem;
+            top: 0.5rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            z-index: 1;
+        }
+        .progress-bar {
+            height: 0.5rem;
+            background-color: #e2e8f0;
+            border-radius: 0.25rem;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #3b82f6;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="max-w-5xl mx-auto px-4 py-8">
+    <div class="mb-12">
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">尹武生</h1>
+        <h2 class="text-xl text-blue-600 font-semibold mb-4">高级前端开发工程师</h2>
+        
+        <div class="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
+            <div class="flex items-center">
+                <i class="fas fa-briefcase mr-2"></i>
+                <span>8年复杂场景交付经验</span>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-cogs mr-2"></i>
+                <span>前端工程化专家</span>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-mobile-alt mr-2"></i>
+                <span>跨端技术实践者</span>
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap items-center gap-4 text-gray-600">
+            <div class="flex items-center">
+                <i class="fas fa-phone mr-2"></i>
+                <span>15361018790</span>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-envelope mr-2"></i>
+                <span>ywsh9527@163.com</span>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-globe mr-2"></i>
+                <a href="https://yws9527.github.io" class="text-blue-600 hover:underline">技术博客</a>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>深圳</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6 section-title">技术亮点</h3>
+        <div class="card bg-white rounded-lg p-6">
+            <div class="mermaid">
+                graph LR
+                    A[工程化专家] --> B[自研Vite/Webpack插件]
+                    A --> C[Jenkins+Docker全链路部署]
+                    D[架构设计] --> E[高复用组件库]
+                    D --> F[跨端通信方案]
+                    G[技术领导力] --> H[3人团队管理]
+                    G --> I[规范制定/人才培养]
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6 section-title">专业技能</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card bg-white rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-blue-600 mb-4">核心框架</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Vue2/3（精通响应式原理）</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>React（Redux生态）</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card bg-white rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-blue-600 mb-4">工程化</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Webpack/Vite插件开发</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Shell脚本部署工具链</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Jenkins+Docker CI/CD</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card bg-white rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-blue-600 mb-4">跨端开发</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>微信小程序</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Flutter混合开发</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>H5容器化技术</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card bg-white rounded-lg p-6">
+                <h4 class="text-lg font-semibold text-blue-600 mb-4">基建能力</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>脚手架开发</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>组件库设计</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>TS类型系统</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Nginx配置优化</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6 section-title">项目经验</h3>
+        
+        <div class="space-y-8">
+            <div class="card bg-white rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-800">深圳市易体益科技有限公司</h4>
+                        <p class="text-gray-500">2022.07 - 2023.12</p>
+                    </div>
+                    <div class="mt-2 md:mt-0">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">技术组长（团队3人）</span>
+                    </div>
+                </div>
+                
+                <h5 class="text-lg font-semibold text-gray-700 mb-3">体育测试中台系统</h5>
+                
+                <div class="mb-6">
+                    <div class="mermaid">
+                        pie
+                            title 关键成果
+                            "工程化提效" : 40
+                            "部署优化" : 30
+                            "组件复用" : 20
+                            "团队建设" : 10
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h6 class="font-semibold text-gray-700 mb-2">工程体系构建</h6>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>开发<code class="bg-gray-100 px-1 rounded">buildInfoPlugin</code>等Vite插件，构建速度<span class="text-green-600 font-medium">提升40%</span></li>
+                            <li>推动部署演进：Shell脚本→Jenkins+Docker，部署耗时<span class="text-green-600 font-medium">减少70%</span>（25min→8min）</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h6 class="font-semibold text-gray-700 mb-2">性能与复用</h6>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>封装10+高复用组件（树形穿梭框/体测预约组件），业务开发效率<span class="text-green-600 font-medium">提升30%</span></li>
+                            <li>设计大屏数据渲染优化方案，FPS稳定60帧</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h6 class="font-semibold text-gray-700 mb-2">团队贡献</h6>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>主导招聘流程，成功引进2名中级前端工程师</li>
+                            <li>制定《前端质量守则》，代码评审通过率<span class="text-green-600 font-medium">提升60%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card bg-white rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-800">鲸端科技</h4>
+                        <p class="text-gray-500">2021.03 - 2022.03</p>
+                    </div>
+                    <div class="mt-2 md:mt-0">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">核心开发</span>
+                    </div>
+                </div>
+                
+                <h5 class="text-lg font-semibold text-gray-700 mb-3">电商中台体系</h5>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h6 class="font-semibold text-gray-700 mb-2">复杂模块攻坚</h6>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>实现商品SKU核心算法，支持200+属性动态匹配</li>
+                            <li>设计首页模块化方案，抽象元数据对接多端（Flutter/H5/小程序）</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h6 class="font-semibold text-gray-700 mb-2">跨端突破</h6>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>开发Flutter-H5通信桥接层，双端交互效率<span class="text-green-600 font-medium">提升300%</span></li>
+                            <li>推动Git规范：Husky+CommitLint，代码可维护性<span class="text-green-600 font-medium">提升50%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card bg-white rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-800">鼎峰软件</h4>
+                        <p class="text-gray-500">2018.06 - 2020.08</p>
+                    </div>
+                    <div class="mt-2 md:mt-0">
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">技术先锋</span>
+                    </div>
+                </div>
+                
+                <h5 class="text-lg font-semibold text-gray-700 mb-3">管理后台体系</h5>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h6 class="font-semibold text-gray-700 mb-2">工程化实践</h6>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>开发多环境Webpack构建脚本，发布效率<span class="text-green-600 font-medium">提升200%</span></li>
+                            <li>实现RBAC权限系统，支持页面级+路由级精细控制</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h6 class="font-semibold text-gray-700 mb-2">技术预研</h6>
+                        <ul class="space-y-2 pl-5 list-disc">
+                            <li>输出《Flutter混合开发可行性报告》</li>
+                            <li>实践Nginx配置优化，静态资源加载速度<span class="text-green-600 font-medium">提升65%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6 section-title">技术影响力</h3>
+        <div class="card bg-white rounded-lg p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="text-lg font-semibold text-blue-600 mb-3">开源贡献</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-code-branch text-blue-500 mt-1 mr-2"></i>
+                            <span>自研<code class="bg-gray-100 px-1 rounded">vite-plugin-http2</code>插件解决本地HTTPS痛点</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-book text-blue-500 mt-1 mr-2"></i>
+                            <span>博客输出《Vite插件开发实战》系列文章（月均1k+阅读）</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-blue-600 mb-3">知识传递</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-chalkboard-teacher text-blue-500 mt-1 mr-2"></i>
+                            <span>内部培训《前端性能优化24式》获团队金牌课程</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-file-alt text-blue-500 mt-1 mr-2"></i>
+                            <span>编写《脚手架开发指南》新人上手耗时<span class="text-green-600 font-medium">减少80%</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6 section-title">教育背景</h3>
+        <div class="card bg-white rounded-lg p-6">
+            <div class="flex items-center">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800">长江大学</h4>
+                    <p class="text-gray-600">食品营养与检测 | 大专 | 2009-2012</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="card bg-blue-50 rounded-lg p-6 mb-12">
+        <h3 class="text-xl font-bold text-blue-800 mb-4">投递建议</h3>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                <span>搭配作品集投递：GitHub源码+线上项目演示链接</span>
+            </li>
+            <li class="flex items-start">
+                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                <span>重点申请A轮后初创公司/技术驱动型团队</span>
+            </li>
+            <li class="flex items-start">
+                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                <span>面试携带《工程化实践手册》实物展示</span>
+            </li>
+        </ul>
+    </div> -->
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            },
+            pie: {
+                useMaxWidth: true,
+                htmlLabels: true
+            }
+        });
+    </script>
+</body>
+</html>
