@@ -154,6 +154,12 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
+      path: /html/about.html
+      type: tabs # see `site.collections`
+    values:
+      layout: page
+      permalink: /:about/
+  - scope:
       path: assets/img/favicons
     values:
       swcache: true
