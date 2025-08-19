@@ -127,7 +127,7 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-collection-permalink: /html/:about # the permalink for collections
+permalink: /:about/html/ # the permalink for posts and pages
 
 collections:
   tabs:
