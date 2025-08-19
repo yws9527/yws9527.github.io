@@ -153,6 +153,14 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  # 自定义页面映射 -- start
+  - scope:
+      path: html/about.html
+      type: tabs # see `site.collections`
+    values:
+      layout: page
+      permalink: /:about/
+  # 自定义页面映射 -- end
   - scope:
       path: assets/img/favicons
     values:
