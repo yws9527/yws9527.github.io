@@ -154,8 +154,10 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: /html/about.html
+      path: html/about.html
+      type: _tabs
     values:
+      layout: page
       permalink: /:about/
   - scope:
       path: assets/img/favicons
