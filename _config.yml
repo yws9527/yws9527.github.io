@@ -148,17 +148,17 @@ defaults:
     values:
       comments: false
   - scope:
+      path: html/about.html
+      type: tabs
+    values:
+      # layout: page
+      permalink: /:about/
+  - scope:
       path: ""
       type: tabs # see `site.collections`
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: html/about.html
-      type: _tabs
-    values:
-      layout: page
-      permalink: /:about/
   - scope:
       path: assets/img/favicons
     values:
