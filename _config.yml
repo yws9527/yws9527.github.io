@@ -156,7 +156,6 @@ defaults:
   - scope:
       path: /html/about.html
     values:
-      layout: page
       permalink: /about/
   - scope:
       path: assets/img/favicons
